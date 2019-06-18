@@ -1,5 +1,5 @@
-from deserialise import AVM2Unpackable
-import avm2ins
+from .deserialise import AVM2Unpackable
+from . import avm2ins
 
 class OptionDetail (AVM2Unpackable):
 	_struct = [
@@ -102,7 +102,7 @@ class NamespaceInfo (AVM2Unpackable):
 class StringInfo (AVM2Unpackable):
 	_struct = [
 		('vlu30', 'size'),
-		(unicode, 'value', 'size'),
+		(str, 'value', 'size'),
 	]
 
 class ItemInfo (AVM2Unpackable):

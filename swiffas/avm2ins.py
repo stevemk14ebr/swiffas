@@ -1,4 +1,4 @@
-from deserialise import AVM2Unpackable
+from .deserialise import AVM2Unpackable
 
 class AVM2Instruction (AVM2Unpackable):
 	pass
@@ -84,8 +84,8 @@ class CoerceToAny (AVM2InstructionNoArg):
 class CoerceToString (AVM2InstructionNoArg):
 	_name = 'coerce_s'
 
-class CoerceToString (AVM2InstructionNoArg):
-	_name = 'coerce_s'
+#class CoerceToString (AVM2InstructionNoArg):
+#	_name = 'coerce_s'
 
 class Construct (AVM2VarArgInstruction):
 	_name = 'construct'
@@ -268,8 +268,8 @@ class BranchNotLessEqual (AVM2OffsetInstruction):
 class BranchNotLess (AVM2OffsetInstruction):
 	_name = 'ifnlt'
 
-class BranchNotLess (AVM2OffsetInstruction):
-	_name = 'ifnlt'
+#class BranchNotLess (AVM2OffsetInstruction):
+#	_name = 'ifnlt'
 
 class BranchNotEqual (AVM2OffsetInstruction):
 	_name = 'ifne'
@@ -339,8 +339,8 @@ class BitwiseShiftLeft (AVM2InstructionNoArg):
 class Modulo (AVM2InstructionNoArg):
 	_name = 'modulo'
 
-class Modulo (AVM2InstructionNoArg):
-	_name = 'modulo'
+#class Modulo (AVM2InstructionNoArg):
+#	_name = 'modulo'
 
 class Multiply (AVM2InstructionNoArg):
 	_name = 'multiply'
