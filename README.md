@@ -13,7 +13,9 @@ Serialising back to SWF files should be relatively straightforward to add.
 
 ## Installation
 
-    python3 setup.py install
+Clone the repository and issue `python3 setup.py install`, alternatively you can do:
+
+`pip3 install https://github.com/carlosgprado/swiffas/zipball/master`
 
 ## Usage
 
